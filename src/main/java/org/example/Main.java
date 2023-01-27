@@ -1,6 +1,8 @@
 package org.example;
 
 import org.example.list.arrayListExamples.example1.ListaDeCompras;
+import org.example.list.arrayListExamples.example2.AccesoEquipos;
+import org.example.list.arrayListExamples.example2.ManejoLista;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Main {
         listaDeCompras.imprimirListaCompras();
         System.out.println("-------------------------------------------------------");
         System.out.println("Ejemplo2");
-
-
+        AccesoEquipos accesoEquipos = new AccesoEquipos();
+        accesoEquipos.manipularEquipos();
     }
 }

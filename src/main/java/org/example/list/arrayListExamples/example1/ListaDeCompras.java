@@ -3,7 +3,7 @@ package org.example.list.arrayListExamples.example1;
 import java.util.List;
 
 /**
- *
+ * La clase ListaDeCompras contiene el método imprimirListaCompras.
  */
 
 public class ListaDeCompras {

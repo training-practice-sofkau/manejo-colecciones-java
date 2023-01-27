@@ -1,5 +1,10 @@
 package org.example.list.arrayListExamples.example1;
 
+/**
+ * La clase producto contiene un atributo nombre y su respectivos métodos get y set.
+ * Esta clase me permite crear instancias que luego serán agregadas a una lista de compras.
+ */
+
 public class Producto {
     private String nombre;
 
