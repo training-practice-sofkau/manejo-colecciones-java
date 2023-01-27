@@ -1,10 +1,23 @@
 package org.example.list;
 
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArrayListPractice {
+
     /**
-     * Crear ejemplos en donde se tenga que implementar estos tipos de dato,
-     * minimo 3 escenarios por cada uno, si genera un escenario integrando el conocimiento
-     * previo y que involucre varios tipos de dato, vale por uno de cada uno de los tipos
-     * de dato involucrados.
-     * */
+     * Ejemplo de Empresa de Logística para envíos
+     * Patron de diseño Creacional Factory
+     */
+
+    public void ejecutar(){
+
+        List<TransporteFactory> transporteFactories = new ArrayList<TransporteFactory>();
+
+        transporteFactories.add(new TransporteFactory().crearTransporte("Camion").entregar());
+        transporteFactories.add(new TransporteFactory().crearTransporte("Barco").entregar());
+        transporteFactories.add(new TransporteFactory().crearTransporte("Moto").entregar());
+
+    }
 }
