@@ -3,18 +3,18 @@ package org.example.list;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Perros {
-    ArrayList<Double> peso = new ArrayList<>();
+public class Identificacion {
+    ArrayList<Integer> id = new ArrayList<>();
     Scanner entrada = new Scanner(System.in);
 
     public void ejecutar(){
         int opc;
-        System.out.println("_________________REGISTRO DE PESO DIARIO_________________");
+        System.out.println("_________________IDENTIFICACIONES_________________");
         do {
             System.out.println("1. Cargar registros\n" +
-                    "2. Eliminar Peso\n" +
-                    "3. Consultar peso del dia\n" +
-                    "4. Mostrar registro de peso diario\n" +
+                    "2. Eliminar identificacion\n" +
+                    "3. Consultar identificacion\n" +
+                    "4. Mostrar registro de identificaciones\n" +
                     "5. <--- Atras");
             System.out.print("Digite una opcion: ");
             opc = entrada.nextInt();
@@ -50,63 +50,60 @@ public class Perros {
     }
     public void cargar(){
 
-        peso.add(12.2);
-        peso.add(12.2);
-        peso.add(12.4);
-        peso.add(12.3);
-        peso.add(12.3);
-        peso.add(12.7);
-        peso.add(12.6);
-        peso.add(12.8);
-        peso.add(12.8);
-        peso.add(13.0);
-        peso.add(12.9);
-        peso.add(13.1);
-        peso.add(13.1);
-        peso.add(13.2);
-        peso.add(13.3);
-
-
+        id.add(1);
+        id.add(2);
+        id.add(3);
+        id.add(4);
+        id.add(5);
+        id.add(6);
+        id.add(7);
+        id.add(8);
+        id.add(9);
+        id.add(10);
+        id.add(11);
+        id.add(12);
+        id.add(13);
+        id.add(14);
     }
 
     public void eliminar(){
-        int tam = peso.size();
+        int tam = id.size();
         int indicador;
-        Double dato;
-        System.out.println("Ingrese el dia a eliminar");
+        int dato;
+        System.out.println("Ingrese la identificacion a eliminar");
         indicador = entrada.nextInt();
         if(indicador < tam){
-            dato = peso.get(indicador-1);
-            peso.remove(indicador-1);
+            dato = id.get(indicador-1);
+            id.remove(indicador-1);
             System.out.println("Registro eliminado: "+dato);
         } else {
-            System.out.println("Dia no valido");
+            System.out.println("Opcion no valido");
         }
     }
 
     public void consultar (){
-        int tam = peso.size();
+        int tam = id.size();
         int indicador;
-        Double dato;
-        System.out.println("Ingrese el dia a consultar");
+        int dato;
+        System.out.println("Ingrese la identificacion a consultar");
         indicador = entrada.nextInt();
         if(indicador < tam){
-            dato = peso.get(indicador-1);
-            System.out.println("Dia consutado: "+indicador+"    peso: "+dato);
-        } else if(peso.isEmpty()==true){
+            dato = id.get(indicador-1);
+            System.out.println("Idntificacion consutado: "+dato);
+        } else if(id.isEmpty()==true){
             System.out.println("Lista vacia");
         } else {
-            System.out.println("Dia errado");
+            System.out.println("Seleccion no valida");
         }
 
     }
 
     public void mostrarLista (){
-        if(peso.isEmpty()==true){
+        if(id.isEmpty()==true){
             System.out.println("Lista vacia");
         } else {
-            for (Double pesos: peso) {
-                System.out.println(pesos);}
+            for (Integer ids: id) {
+                System.out.println(ids);}
         }
     }
 }
