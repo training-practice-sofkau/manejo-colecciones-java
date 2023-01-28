@@ -7,4 +7,5 @@ public class ArrayListPractice {
      * previo y que involucre varios tipos de dato, vale por uno de cada uno de los tipos
      * de dato involucrados.
      * */
+
 }
