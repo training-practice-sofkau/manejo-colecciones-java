@@ -2,6 +2,7 @@ package org.example.list;
 
 public class TransporteFactory {
 
+
     public Transporte crearTransporte(String tipo){
 
         if(tipo == null) {

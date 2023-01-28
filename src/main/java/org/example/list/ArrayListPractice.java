@@ -9,6 +9,7 @@ public class ArrayListPractice {
     /**
      * Ejemplo de Empresa de Logística para envíos
      * Patron de diseño Creacional Factory
+     * Interface Transporte - Barco, Camion, Moto, - TransporteFactory
      */
 
     public void ejecutar(){
