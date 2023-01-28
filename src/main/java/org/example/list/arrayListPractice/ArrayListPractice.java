@@ -75,7 +75,28 @@ public class ArrayListPractice {
             System.out.println("El nombre del pais es: " + informacion);
         });
 
+        System.out.println();
     }
+
+    /**
+     * *************   Ejercicio # 4  ********
+     */
+
+    public static void ejecutarEjercicio4() {
+        System.out.println("*****   Ejercicio # 4  *******\n");
+        List<Mes> meses = new ArrayList<>();
+        meses.add(new Mes("Enero"));
+        meses.add(new Mes("Febrero"));
+        meses.add(new Mes("Marzo"));
+        meses.add(new Mes("Abril"));
+
+        for (int i = 0; i < meses.size(); i++) {
+            System.out.println("Indice: " + i +" "+ meses.get(i));
+
+        }
+
+    }
+
     public static void ejecutarPrincipal(){
         ejecutar();
         ejecutarEjercicio2();

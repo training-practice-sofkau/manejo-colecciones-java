@@ -2,15 +2,18 @@ package org.example;
 
 import org.example.list.arrayListPractice.ArrayListPractice;
 import org.example.list.arrayListPractice.Persona;
+import org.example.list.linkedListPratice.LinkedListPractice;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
-        System.out.println("*****   Ejercicio rrayListPractice  *******\n");
-        //ArrayListPractice.ejecutar();
-        //ArrayListPractice.ejecutarEjercicio2();
+        System.out.println("Hello world!\n");
+        System.out.println("*****   Ejercicio ArrayListPractice  *******\n");
         ArrayListPractice.ejecutarPrincipal();
+        ArrayListPractice.ejecutarEjercicio4();
+
+        System.out.println("*****   Ejercicio LinkedList  *******\n");
+        LinkedListPractice.ejecutarPrincipal();
 
     }
 }
