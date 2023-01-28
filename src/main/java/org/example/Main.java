@@ -7,6 +7,7 @@ public class Main {
 
         ArrayListPractice arrayListPractice = new ArrayListPractice();
         arrayListPractice.ejemplo1();
+        arrayListPractice.ejemplo2();
 
     }
 }
