@@ -6,6 +6,7 @@ import org.example.list.arrayListExamples.example3.SeriesList;
 import org.example.list.linkedListExamples.example1.LinkedListFriends;
 import org.example.list.linkedListExamples.example2.LinkedListRoster;
 import org.example.list.linkedListExamples.example3.LinkedListPeople;
+import org.example.set.example1.ExampleHashSetWeek;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +35,10 @@ public class Main {
         System.out.println("Ejemplo3");
         LinkedListPeople linkedListPeople = new LinkedListPeople();
         linkedListPeople.managePeople();
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Ejemplos HashSet");
+        System.out.println("Ejemplo1:");
+        ExampleHashSetWeek exampleHashSetWeek = new ExampleHashSetWeek();
+        exampleHashSetWeek.manageHashSet();
     }
 }
