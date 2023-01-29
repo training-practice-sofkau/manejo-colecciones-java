@@ -3,7 +3,7 @@ package org.example.list;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Perros {
+public class Perros implements Operaciones{
     ArrayList<Double> peso = new ArrayList<>();
     Scanner entrada = new Scanner(System.in);
 
@@ -31,7 +31,6 @@ public class Perros {
                     break;
                 case 3:
                     System.out.println("----------------------------------------------------------------------");
-                    System.out.println("");
                     consultar();
                     break;
                 case 4:

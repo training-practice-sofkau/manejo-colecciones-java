@@ -3,7 +3,7 @@ package org.example.list;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Gatos {
+public class Gatos implements Operaciones{
     ArrayList<String> raza = new ArrayList<>();
     Scanner entrada = new Scanner(System.in);
 

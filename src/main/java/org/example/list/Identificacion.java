@@ -3,11 +3,11 @@ package org.example.list;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Identificacion {
+public class Identificacion implements Operaciones{
     ArrayList<Integer> id = new ArrayList<>();
     Scanner entrada = new Scanner(System.in);
 
-    public void ejecutar(){
+     public void ejecutar(){
         int opc;
         System.out.println("_________________IDENTIFICACIONES_________________");
         do {
@@ -66,7 +66,7 @@ public class Identificacion {
         id.add(14);
     }
 
-    public void eliminar(){
+    public void eliminar() {
         int tam = id.size();
         int indicador;
         int dato;
