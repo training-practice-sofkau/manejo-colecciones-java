@@ -3,7 +3,7 @@ package org.example.map;
 import java.util.HashMap;
 
 public class HashMapEjemplo1 {
-    public static void main(String[] args) {
+    public void main() {
         // Crear un HashMap para almacenar información sobre videojuegos
         HashMap<String, String> videojuegos = new HashMap<>();
         videojuegos.put("The Legend of Zelda: Breath of the Wild", "Action-adventure");

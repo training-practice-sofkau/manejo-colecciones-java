@@ -14,7 +14,7 @@ public class HashSetEjemplo1 {
      *
      * @param args
      */
-    public static void main(String[] args) {
+    public void main() {
         // Crea un nuevo objeto HashSet
         Set<String> colores = new HashSet<>();
 

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class LinkedListEjercicio2 {
-        public static void main(String[] args) {
+        public void main() {
             // Crear una LinkedList de números
             LinkedList<Integer> numeros = new LinkedList<>();
             numeros.add(1);

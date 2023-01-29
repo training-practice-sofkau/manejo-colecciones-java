@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class LinkedListEjercicio3 {
 
-    public static void main(String[] args) {
+    public void main() {
         // Crear una LinkedList de marcas de computadoras
         LinkedList<String> marcas = new LinkedList<>();
         marcas.add("Dell");

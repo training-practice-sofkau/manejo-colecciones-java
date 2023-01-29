@@ -14,7 +14,7 @@ public class ColeccionesExample {
      * previo y que involucre varios tipos de dato, vale por uno de cada uno de los tipos
      * de dato involucrados.
      * */
-        public static void main(String[] args) {
+        public  void main() {
             // Crear una lista de frutas
             List<String> frutas = new ArrayList<>();
             frutas.add("manzana");

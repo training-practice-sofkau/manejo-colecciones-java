@@ -3,7 +3,7 @@ package org.example.set;
 import java.util.HashSet;
 
 public class HashSetEjemplo3 {
-    public static void main(String[] args) {
+    public void main() {
         HashSet<String> set = new HashSet<>();
 
         set.add("dog");

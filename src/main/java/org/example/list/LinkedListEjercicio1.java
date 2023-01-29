@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class LinkedListEjercicio1 {
 
-    public static void main(String[] args) {
+    public void main() {
         // Crear una LinkedList de nombres
         LinkedList<String> nombres = new LinkedList<>();
         nombres.add("Bryan");

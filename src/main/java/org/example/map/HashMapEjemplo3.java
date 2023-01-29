@@ -3,7 +3,7 @@ package org.example.map;
 import java.util.HashMap;
 
 public class HashMapEjemplo3 {
-    public static void main(String[] args) {
+    public void main() {
         // Crear un HashMap para almacenar información sobre productos y sus precios
         HashMap<String, Integer> productos = new HashMap<>();
         productos.put("Laptop", 500);

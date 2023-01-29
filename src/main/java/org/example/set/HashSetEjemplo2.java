@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class HashSetEjemplo2 {
 
-    public static void main(String[] args) {
+    public void main() {
         Set<Estudiante> estudiantes = new HashSet<>();
 
         estudiantes.add(new Estudiante("Juan", 20));
