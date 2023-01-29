@@ -1,5 +1,7 @@
 package org.example.list.arrayListPractice;
 
+import java.util.Objects;
+
 public class Computador {
     private String tipo;
     private String marca;
@@ -39,6 +41,19 @@ public class Computador {
     public Computador setPulga(double pulga) {
         this.pulga = pulga;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Computador)) return false;
+        Computador that = (Computador) o;
+        return marca.equals(that.marca);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(marca);
     }
 
     @Override

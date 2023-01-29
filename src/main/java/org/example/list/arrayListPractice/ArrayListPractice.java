@@ -31,6 +31,7 @@ public class ArrayListPractice {
     }
 
     public static void ejecutar(){
+        //En un ArrayList permite ingresar valores repetidos y llevan un orden
         System.out.println("*****   Ejercicio # 1  *******\n");
         Persona persona1 = new Persona().setNombre("Antonio").setEdad(45);
         Persona persona2 = new Persona().setNombre("Yarledis").setEdad(40);
@@ -45,6 +46,7 @@ public class ArrayListPractice {
      */
 
     public static void ejecutarEjercicio2(){
+        //En un ArrayList permite ingresar valores repetidos y llevan un orden
         System.out.println();
         System.out.println("*****   Ejercicio # 2  *******\n");
         List<Computador> lista = new ArrayList<>();
@@ -65,6 +67,7 @@ public class ArrayListPractice {
      */
 
     public static void ejecutarEjercicio3(){
+        //En un ArrayList permite ingresar valores repetidos y llevan un orden
         System.out.println("*****   Ejercicio # 3  *******\n");
         List<Pais> pais = new ArrayList<>();
         pais.add(new Pais("Colombia"));
@@ -83,6 +86,7 @@ public class ArrayListPractice {
      */
 
     public static void ejecutarEjercicio4() {
+        //En un ArrayList permite ingresar valores repetidos y llevan un orden
         System.out.println("*****   Ejercicio # 4  *******\n");
         List<Mes> meses = new ArrayList<>();
         meses.add(new Mes("Enero"));
