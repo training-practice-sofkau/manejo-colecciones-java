@@ -5,6 +5,7 @@ import org.example.list.arrayListExamples.example2.AccesoEquipos;
 import org.example.list.arrayListExamples.example3.SeriesList;
 import org.example.list.linkedListExamples.example1.LinkedListFriends;
 import org.example.list.linkedListExamples.example2.LinkedListRoster;
+import org.example.list.linkedListExamples.example3.LinkedListPeople;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +30,9 @@ public class Main {
         System.out.println("Ejemplo2:");
         LinkedListRoster linkedListRoster = new LinkedListRoster();
         linkedListRoster.roster();
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println("Ejemplo3");
+        LinkedListPeople linkedListPeople = new LinkedListPeople();
+        linkedListPeople.managePeople();
     }
 }
