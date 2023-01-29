@@ -54,13 +54,6 @@ public class ArrayListPractice {
         for (Biblioteca libro:listaLibros) {
             System.out.println(libro.toString());
         }
-
-
-
-
-
-
-
     }
 
 }
