@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.list.ArrayLits.*;
 import org.example.list.linKedList.LinkedListPractice;
+import org.example.map.HashMapPractice;
+import org.example.set.HashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,13 +29,21 @@ public class Main {
 
         /**
          * HashMap
+         * En este ejemplo implemento varios hashMap para manipular los participantes en las olimpiadas
+         * por deporte y el ingreso de los asistentes.
          */
         System.out.println("----HashMap----");
+        HashMapPractice hashMapPractice = new HashMapPractice();
+        hashMapPractice.ejecutar();
 
         /**
          * HashSet
+         * En este ejemplo implemento varios hashSet para controlar a los votantes y jurados en la elecciones
+         * para que no se repirtan.
          */
         System.out.println("----HashSet----");
+        HashSet hashSet = new HashSet();
+        hashSet.ejecutar();
 
     }
 }
