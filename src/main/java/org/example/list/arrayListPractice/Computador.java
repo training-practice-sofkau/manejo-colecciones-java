@@ -48,12 +48,12 @@ public class Computador {
         if (this == o) return true;
         if (!(o instanceof Computador)) return false;
         Computador that = (Computador) o;
-        return marca.equals(that.marca);
+        return Double.compare(that.pulga, pulga) == 0 && Objects.equals(tipo, that.tipo) && Objects.equals(marca, that.marca);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(marca);
+        return Objects.hash(tipo, marca, pulga);
     }
 
     @Override

@@ -1,7 +1,6 @@
 package org.example.list.arrayListPractice;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListPractice {
     /**
@@ -93,6 +92,7 @@ public class ArrayListPractice {
         meses.add(new Mes("Febrero"));
         meses.add(new Mes("Marzo"));
         meses.add(new Mes("Abril"));
+
 
         for (int i = 0; i < meses.size(); i++) {
             System.out.println("Indice: " + i +" "+ meses.get(i));

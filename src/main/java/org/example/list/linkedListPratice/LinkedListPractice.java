@@ -1,10 +1,7 @@
 package org.example.list.linkedListPratice;
 
-import org.example.list.arrayListPractice.Computador;
-import org.example.list.arrayListPractice.Mes;
-import org.example.list.arrayListPractice.Pais;
-import java.util.LinkedList;
-import java.util.List;
+import org.example.list.arrayListPractice.*;
+import java.util.*;
 
 public class LinkedListPractice {
 
