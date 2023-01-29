@@ -31,8 +31,8 @@ public class Main {
                     linkedListPractice.ejemplo1();
                     System.out.println("------------------------------------------------");
                     linkedListPractice.ejemplo2();
-
-
+                    System.out.println("------------------------------------------------");
+                    linkedListPractice.ejemplo3();
                     break;
 
                 case 3:

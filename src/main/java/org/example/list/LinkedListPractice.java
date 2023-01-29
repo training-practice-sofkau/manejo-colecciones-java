@@ -1,6 +1,7 @@
 package org.example.list;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class LinkedListPractice {
 
@@ -41,6 +42,29 @@ public class LinkedListPractice {
         }
     }
     public void ejemplo3(){
+        LinkedList<String> departamento= new LinkedList<>();
+        departamento.add("Huila");
+        departamento.add("Caldas");
+        departamento.add("Cundinamarca");
+
+        LinkedList<String> capital= new LinkedList<>();
+        capital.add("Neiva");
+        capital.add("Manizalez");
+        capital.add("Bogota");
+
+        ListIterator<String> iterador1= departamento.listIterator();
+        ListIterator<String> iterador2= capital.listIterator();
+
+        while (iterador2.hasNext()){
+
+            if (iterador1.hasNext()){
+                iterador1.next();
+            }
+            iterador1.add(iterador2.next());
+        }
+        System.out.println(departamento);
+
+
 
     }
 
