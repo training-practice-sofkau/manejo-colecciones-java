@@ -8,6 +8,7 @@ import org.example.list.linkedListExamples.example2.LinkedListRoster;
 import org.example.list.linkedListExamples.example3.LinkedListPeople;
 import org.example.set.example1.ExampleHashSetWeek;
 import org.example.set.example2.HashSetPlayer;
+import org.example.set.example3.ExampleHashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,5 +47,8 @@ public class Main {
         HashSetPlayer hashSetPlayer = new HashSetPlayer();
         hashSetPlayer.manageHashSet();
         System.out.println("--------------------------------------------------------------");
+        System.out.println("Ejemplo3");
+        ExampleHashSet exampleHashSet = new ExampleHashSet();
+        exampleHashSet.manageHashSet3();
     }
 }
