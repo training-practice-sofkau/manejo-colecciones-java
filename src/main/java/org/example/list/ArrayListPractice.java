@@ -1,6 +1,8 @@
 package org.example.list;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListPractice {
     /**
@@ -33,6 +35,28 @@ public class ArrayListPractice {
         for (int i =0; i < listaEmpleados.size(); i++){
             System.out.println("El empleado en la posicion "+ i+ " es "+ listaEmpleados.get(i));
         }
+    }
+    public void ejemplo3(){
+        ArrayList<Biblioteca> listaLibros = new ArrayList<>();
+        listaLibros.add(new Biblioteca("Codigo limpio","Jim lewis"));
+        listaLibros.add(new Biblioteca("Desarrollo de aplicaciones web con PHP","Manuel Torres Remon"));
+        listaLibros.add(new Biblioteca("Programming Pearls","Jon Bentley"));
+
+        Iterator<Biblioteca> misLibros = listaLibros.iterator();
+        while (misLibros.hasNext()){
+            String nombre_libro = misLibros.next().getNombre();
+            if (nombre_libro.equals("Codigo limpio")){
+                misLibros.remove();
+            }
+        }
+        System.out.println("Lista de Libros");
+
+        for (Biblioteca libro:listaLibros) {
+            System.out.println(libro.toString());
+        }
+
+
+
 
 
 
