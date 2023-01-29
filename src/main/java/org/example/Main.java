@@ -1,17 +1,21 @@
 package org.example;
 
 import org.example.lisarraylist.Alimento;
+import org.example.lisarraylist.ArrayListPractice;
 import org.example.lisarraylist.Empleado;
+import org.example.listlinkenlist.LinkedListPractice;
 import org.example.listlinkenlist.Vehiculo;
+import org.example.map.HashMapPractice;
 
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
         System.out.println("Hello world!");
 
 
         System.out.println("<-----------Ejemplos de Array List------------------------->");
-        Alimento alimento = new Alimento();
+        ArrayListPractice alimento = new ArrayListPractice();
         alimento.ejecutar();
 
 
@@ -19,8 +23,8 @@ public class Main {
         //  empleado.calcularSueldo(1000, 5);
         System.out.println("el sueldo es" + " : " + empleado.calcularSueldo(100, 2));
 
-        Empleado empleado1 = new Empleado();
-        empleado1.ejecutar();
+        ArrayListPractice empleado1 = new ArrayListPractice();
+        empleado1.ejecutar1();
 
         System.out.println("<-----------Ejemplos de Array List------------------------->");
 
@@ -28,11 +32,19 @@ public class Main {
         System.out.println("<-----------Ejemplos de  LinkedList------------------------->");
 
 
-        Vehiculo vehiculo1 = new Vehiculo();
+        LinkedListPractice vehiculo1 = new LinkedListPractice();
         vehiculo1.ejecutar();
 
         System.out.println("<-----------Ejemplos de  LinkedList------------------------->");
 
+
+        System.out.println("<-----------Ejemplos de  HashMap------------------------->");
+
+        HashMapPractice animales = new HashMapPractice();
+        animales.ejecutar();
+
+
+        System.out.println("<-----------Ejemplos de  HashMap------------------------->");
 
     }
 }

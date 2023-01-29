@@ -57,44 +57,6 @@ public class Alimento {
     }
 
 
-    public void ejecutar() {
-
-
-        ArrayList<Alimento> alimentosConsumidos = new ArrayList<Alimento>();
-
-        Alimento panIntegral = new Alimento("Pan integral", 2, 160);
-        Alimento pollo = new Alimento("Pollo a la plancha", 100, 200);
-
-
-        alimentosConsumidos.add(panIntegral);
-        alimentosConsumidos.add(pollo);
-
-
-        System.out.println("Alimentos consumidos antes de eliminarlo de la lista:");
-        for (Alimento alimento : alimentosConsumidos) {
-            System.out.println("Alimento: " + alimento.getNombre());
-            System.out.println("Cantidad: " + alimento.getCantidad() + " gramos");
-            System.out.println("Calorías: " + alimento.getCalorias() + "\n");
-        }
-
-        alimentosConsumidos.remove(panIntegral);
-
-        System.out.println("Alimentos consumidos después de eliminarlo dela lista:");
-        for (Alimento alimento : alimentosConsumidos) {
-            System.out.println("Alimento: " + alimento.getNombre());
-            System.out.println("Cantidad: " + alimento.getCantidad() + " gramos");
-            System.out.println("Calorías: " + alimento.getCalorias() + "\n");
-        }
-
-        int totalCalorias = 0;
-        for (Alimento alimento : alimentosConsumidos) {
-            totalCalorias += alimento.getCalorias();
-        }
-
-        System.out.println("Total de calorías consumidas hoy: " + totalCalorias);
-
-
-    }
 }
 
 
