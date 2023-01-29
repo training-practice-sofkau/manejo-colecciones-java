@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.lisarraylist.Alimento;
 import org.example.lisarraylist.Empleado;
+import org.example.listlinkenlist.Vehiculo;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,19 @@ public class Main {
         //  empleado.calcularSueldo(1000, 5);
         System.out.println("el sueldo es" + " : " + empleado.calcularSueldo(100, 2));
 
+        Empleado empleado1 = new Empleado();
+        empleado1.ejecutar();
+
         System.out.println("<-----------Ejemplos de Array List------------------------->");
+
+
+        System.out.println("<-----------Ejemplos de  LinkedList------------------------->");
+
+
+        Vehiculo vehiculo1 = new Vehiculo();
+        vehiculo1.ejecutar();
+
+        System.out.println("<-----------Ejemplos de  LinkedList------------------------->");
 
 
     }
