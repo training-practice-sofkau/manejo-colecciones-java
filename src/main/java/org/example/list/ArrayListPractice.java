@@ -107,9 +107,7 @@ public class ArrayListPractice {
                 case 2:
                     System.out.println("Digite la placa del auto que desea eliminar");
                     String placa1 = in.nextLine();
-                    /**
-                     *
-                     */
+
                     for (int i = 0; i < carros.size(); i++) {
                         if (carros.get(i).getPlaca().equals(placa1)) {
                             /**
@@ -174,8 +172,8 @@ public class ArrayListPractice {
         /**
          * Eliminar elementos del ArrayList
          */
-        personas.remove(1); // Elimina a Maria Garcia
-        personas.remove(persona3); // Elimina a Pedro Sanchez
+        personas.remove(1); // Elimina a Martha Gomez
+        personas.remove(persona3); // Elimina a Paula Sanabria
         /**
          *        Tamaño del ArrayList
          */
@@ -190,118 +188,6 @@ public class ArrayListPractice {
     }
 
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-class Contacto {
-    /**
-     * Atributos
-     */
-    private String nombre;
-    private String apellido;
-    private long telefono;
 
-    /**
-     * Constructor
-     * @param nombre
-     * @param apellido
-     * @param telefono
-     */
-    public Contacto(String nombre, String apellido, long telefono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.telefono = telefono;
-    }
-
-    /**
-     * Metodos getters y setters
-     * @return
-     */
-    public String getNombre() {
-        return nombre;
-    }
-    public String getApellido() {
-        return apellido;
-    }
-    public long getTelefono() {
-        return telefono;
-    }
-
-    /**
-     * Metodo para ver la información del conctato
-     * @return
-     */
-    @Override
-    public String toString() {
-            return "Contacto:" +  "\nNombre: " + nombre +  "\nApellido: " + apellido + "\nTelefono: " + telefono;
-    }
-}
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-class Carro {
-    private String marca;
-    private String modelo;
-    private String placa;
-    /**
-     * Método constructor
-     * @param marca
-     * @param modelo
-     * @param placa
-     */
-    public Carro(String marca, String modelo, String placa) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.placa = placa;
-    }
-
-    /**
-     * Métodos getters
-     * @return
-     */
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-}
-///////////////////////////////////////////////////////////////////////////////////////
-class Persona {
-    /**
-     * Atributos
-     */
-    private String nombre;
-    private String apellido;
-    private int edad;
-
-    /**
-     * Método constructor
-     * @param nombre
-     * @param apellido
-     * @param edad
-     */
-    public Persona(String nombre, String apellido, int edad) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-    }
-    /**
-     * getters
-     * @return
-     */
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-}
 
 
