@@ -30,6 +30,7 @@ public class Main {
                     System.out.println("------------------------------------------------");
                     linkedListPractice.ejemplo1();
                     System.out.println("------------------------------------------------");
+                    linkedListPractice.ejemplo2();
 
 
                     break;

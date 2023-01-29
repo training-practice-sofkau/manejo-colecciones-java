@@ -23,10 +23,22 @@ public class LinkedListPractice {
         for (Producto productos:listaProductos) {
             System.out.println(productos.toString());
         }
-
     }
     public void ejemplo2(){
-
+        LinkedList<Electrodomesticos> listaElec = new LinkedList<>();
+        listaElec.add(new Electrodomesticos("Nevera"));
+        listaElec.add(new Electrodomesticos("Lavadora"));
+        listaElec.add(new Electrodomesticos("Televisor"));
+        System.out.println("   Lista de electrodomesticos");
+        for (Electrodomesticos lista:listaElec) {
+            System.out.println(lista.toString());
+        }
+        listaElec.removeFirst();
+        listaElec.addLast(new Electrodomesticos("Grabadora"));
+        System.out.println("   Lista de electrodomesticos Actualizada");
+        for (Electrodomesticos lista:listaElec) {
+            System.out.println(lista.toString());
+        }
     }
     public void ejemplo3(){
 
