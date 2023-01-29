@@ -14,5 +14,6 @@ public class Main {
 
         LinkedListPractice prueba1 = new LinkedListPractice();
         prueba1.ejecutarLinked();
+
     }
 }
