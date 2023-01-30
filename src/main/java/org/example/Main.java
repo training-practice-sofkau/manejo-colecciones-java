@@ -6,6 +6,7 @@ import org.example.lisarraylist.Empleado;
 import org.example.listlinkenlist.LinkedListPractice;
 import org.example.listlinkenlist.Vehiculo;
 import org.example.map.HashMapPractice;
+import org.example.set.HashSetPractice;
 
 public class Main {
 
@@ -45,6 +46,13 @@ public class Main {
 
 
         System.out.println("<-----------Ejemplos de  HashMap------------------------->");
+
+
+        HashSetPractice pais = new HashSetPractice();
+        pais.ejecutar();
+
+        System.out.println("<-----------Ejemplos de  HashMap------------------------->");
+
 
     }
 }
