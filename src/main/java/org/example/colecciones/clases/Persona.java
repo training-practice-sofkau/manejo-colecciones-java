@@ -47,4 +47,20 @@ public class Persona {
         resultado = numero * resultado + ((cedula == null)? 0 : cedula.hashCode());
         return resultado;
     }
+
+    /**
+     * Esta función es para que los hashSet puedan comparar contra la cédula de una persona
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Persona otro = (Persona) obj;
+        if (!this.getCedula().equalsIgnoreCase(otro.getCedula())) {
+            return false;
+        }
+        return true;
+    }
 }

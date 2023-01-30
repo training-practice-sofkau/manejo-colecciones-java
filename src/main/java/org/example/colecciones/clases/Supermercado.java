@@ -11,6 +11,26 @@ public class Supermercado {
     public Supermercado(){
         this.clientes = new HashSet<>();
         this.cajaRegistradora = new LinkedList<>();
+        this.llenarMercado();
+    }
+
+    public void llenarMercado (){
+        Cliente cliente = new Cliente("Gretty", "Mosquera", "1152697987");
+        Cliente cliente1 = new Cliente("Alejandro", "Quiroz", "1153695987");
+        Cliente cliente2 = new Cliente("Jairo", "Mosquera", "1154879698");
+
+        cliente.agregarACarrito(new Producto("Leche", 5000, 1));
+        cliente.agregarACarrito(new Producto("Quesito", 3000, 2));
+
+        cliente1.agregarACarrito(new Producto("Avena", 6000, 1));
+        cliente1.agregarACarrito(new Producto("Jamón", 15000, 2));
+
+        cliente2.agregarACarrito(new Producto("Acondicionador", 5000, 1));
+        cliente2.agregarACarrito(new Producto("Jabón", 3000, 3));
+
+        this.clientes.add(cliente);
+        this.clientes.add(cliente1);
+        this.clientes.add(cliente2);
     }
 
     public void ingresarCliente(){
@@ -47,9 +67,12 @@ public class Supermercado {
         for (Cliente cliente: this.clientes) {
             if (cliente.getCedula().equalsIgnoreCase(cedula)){
                 System.out.println("Ingresa el nombre del producto: ");
-
                 String nombre = entrada.nextLine();
+
+                System.out.println("Ingrese el valor: ");
                 double valor = entrada.nextDouble();
+
+                System.out.println("Ingrese la cantidad: ");
                 int cantidad = entrada.nextInt();
 
                 Producto producto = new Producto(nombre, valor, cantidad);
@@ -70,11 +93,18 @@ public class Supermercado {
         String cedula = entrada.nextLine();
 
         boolean encontrado = false;
+        boolean yaExiste = false;
+
+        for (Cliente cliente: this.cajaRegistradora){
+            if(cliente.getCedula().equalsIgnoreCase(cedula)){
+                yaExiste = true;
+            }
+        }
 
         for(Cliente cliente: this.clientes){
-            if (cliente.getCedula().equalsIgnoreCase(cedula)){
+            if (cliente.getCedula().equalsIgnoreCase(cedula) && !yaExiste){
                 this.cajaRegistradora.add(cliente);
-                this.clientes.remove(cliente);
+                encontrado = true;
             }
         }
 
@@ -97,6 +127,8 @@ public class Supermercado {
             double total = primerCliente.calcularValorPagar();
             System.out.println("Total a pagar: " + total);
             System.out.println("Hasta pronto: " + primerCliente.getNombre());
+
+            this.clientes.remove(primerCliente);
             this.cajaRegistradora.removeFirst();
             System.out.println("\n\n");
             this.consultarClientesCaja();
