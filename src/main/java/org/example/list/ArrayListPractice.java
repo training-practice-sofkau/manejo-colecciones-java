@@ -7,6 +7,8 @@ import java.util.List;
 public class ArrayListPractice {
 
     /**
+     * Los elementos de un ArrayList se pueden agregar y eliminar cuando lo desee.
+     *
      * Ejemplo de Empresa de Logística para envíos
      * Patron de diseño Creacional Factory
      * Interface Transporte - Barco, Camion, Moto, - TransporteFactory

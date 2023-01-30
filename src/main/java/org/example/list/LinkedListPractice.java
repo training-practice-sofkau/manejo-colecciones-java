@@ -5,6 +5,8 @@ import java.util.LinkedList;
 public class LinkedListPractice {
 
     /**
+     * La clase LinkedList es una colección que puede contener muchos objetos del mismo tipo, al igual que ArrayList.
+     *
      * Este ejemplo hace parte de la Empresa de Logística para envíos
      * Patron de diseño de Comportamiento Mediator
      * Interface Mediator - Barco, Camion, Moto, - TransporteFactory
