@@ -1,6 +1,7 @@
 package org.example.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListPractice {
@@ -37,10 +38,16 @@ public class ArrayListPractice {
 
         }
 
+        //Invertir los elementos
+        Collections.reverse(listaDeEmpleados);
+        for (Empleado lista : listaDeEmpleados) {
+            System.out.println(lista);
+        }
+
+   //isEmpaty false que no esta vacia true si esta vacia
+        System.out.println("La lista esta vacia: " + listaDeEmpleados.isEmpty());
 
     }
-
-
 
     }
 
@@ -60,6 +67,8 @@ public class ArrayListPractice {
          this.email = email;
          this.salary = salary;
      }
+
+
 
      public String getName() {
          return name;
@@ -100,4 +109,6 @@ public class ArrayListPractice {
      public void setSalary(Double salary) {
          this.salary = salary;
      }
+
  }
+

@@ -5,7 +5,7 @@ import org.example.list.LinkedListPractice;
 import org.example.map.HashMapPractice;
 import org.example.set.HashSetPractice;
 
-import java.util.HashMap;
+
 
 public class Main {
     public static void main(String[] args) {

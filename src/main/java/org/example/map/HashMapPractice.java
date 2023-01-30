@@ -15,6 +15,9 @@ public class HashMapPractice {
         for(Map.Entry<Integer, String> entry: diccionario.entrySet()){
             System.out.println("Clave Pais: " + entry.getKey() + " - " + "Valor: "  + entry.getValue());;
         }
+        System.out.println("Número de elementos: " + diccionario.size());
+        System.out.println(diccionario.containsValue(1));
+
 
 
 
