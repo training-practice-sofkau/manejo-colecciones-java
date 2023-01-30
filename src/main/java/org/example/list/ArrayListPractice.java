@@ -10,12 +10,11 @@ public class ArrayListPractice {
      * previo y que involucre varios tipos de dato, vale por uno de cada uno de los tipos
      * de dato involucrados.
      * */
-    public static void main(String[] args) {
-
+    public void ejecutar() {
         //ArrayList Empleados
 
         List<Empleado> listaDeEmpleados = new ArrayList<>();
-
+        System.out.println("Lista de empleados: ");
         listaDeEmpleados.add(new Empleado("Carlos", "Leon", 25822, "leon123@gmail.com", 180000.00  ));
         listaDeEmpleados.add(new Empleado("Marta", "Perez", 5222, "perez123@gmail.com", 410000.00 ));
         listaDeEmpleados.add(new Empleado("Lucy", "Vivas",  369, "Vivas123@gmail.com", 280000.00 ));
@@ -24,6 +23,8 @@ public class ArrayListPractice {
         listaDeEmpleados.add(new Empleado("Jenny", "Lopez", 3657, "lopez123@gmail.com", 180000.00 ));
 
 
+        //eliminar
+        listaDeEmpleados.remove(0);
         //recorrer la lista
 
         for (Empleado empleado : listaDeEmpleados) {
@@ -41,7 +42,9 @@ public class ArrayListPractice {
 
 
 
-}
+    }
+
+
  class Empleado{
     private String name;
     private String lastName;
