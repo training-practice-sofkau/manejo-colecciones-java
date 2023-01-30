@@ -22,9 +22,4 @@ public class Cliente extends Persona{
         }
         return total;
     }
-
-    @Override
-    public String toString() {
-        return this.getCedula() + " - " + this.getNombre() + " " + this.getApellido();
-    }
 }

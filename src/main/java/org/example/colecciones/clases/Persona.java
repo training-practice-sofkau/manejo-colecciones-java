@@ -63,4 +63,9 @@ public class Persona {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return this.getCedula() + " - " + this.getNombre() + " " + this.getApellido();
+    }
 }
