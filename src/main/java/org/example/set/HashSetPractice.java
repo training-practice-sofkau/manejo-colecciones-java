@@ -6,34 +6,32 @@ import java.util.HashSet;
 public class HashSetPractice {
 
     public void ejecutar() {
-        HashSet<Pais> paises = new HashSet<>();
+        HashSet<VideoJuego> videoJuegos = new HashSet<>();
 
 
-        Pais Colombia = new Pais("Colombia", 10000, "castellano");
-        Pais EEUU = new Pais("EEUU", 50000, "Ingles");
-        Pais Mexico = new Pais("Mexico", 30000, "castellano");
-        Pais Argentina = new Pais("Argentina", 20000, "castellano");
-        Pais Venezuela = new Pais("Venezuela", 90000, "venezolano");
+        VideoJuego juego1 = new VideoJuego("valoran", "1 a 1 ", "castellano");
+        VideoJuego juego2 = new VideoJuego("fornite", "1 a 1", "Ingles");
+        VideoJuego juego3 = new VideoJuego("halo", "1 a 1", "castellano");
 
-        paises.add(Colombia);
-        paises.add(EEUU);
-        paises.add(Mexico);
-        paises.add(Venezuela);
+
+        videoJuegos.add(juego1);
+        videoJuegos.add(juego2);
+        videoJuegos.add(juego3);
 
         // Verificar si existe un país en el conjunto
-        System.out.println(paises.contains(new Pais("Mexico", 2000, "castellano"))); // Output: true
+        System.out.println(videoJuegos.contains(new VideoJuego("Mexico", "1 a 1 ", "castellano"))); // Output: true
 
         // Remover un país del conjunto
-        paises.remove(Colombia);
+        videoJuegos.remove(juego2);
 
         // Verificar el tamaño del conjunto
-        System.out.println(paises.size()); // Output: 2
+        System.out.println(videoJuegos.size()); // Output: 2
 
         // Limpiar el conjunto
-        paises.clear();
+        videoJuegos.clear();
 
         // Verificar si el conjunto está vacío
-        System.out.println(paises.isEmpty()); // Output: true
+        System.out.println(videoJuegos.isEmpty()); // Output: true
 
     }
 }
