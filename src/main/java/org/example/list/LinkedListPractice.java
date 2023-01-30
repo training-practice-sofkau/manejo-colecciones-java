@@ -20,8 +20,9 @@ public class LinkedListPractice {
         transportadorExistente.add(new TransportadorExistente(central,"Alberto"));
 
         for (TransportadorExistente conductor: transportadorExistente) {
-            central.agregarTransportador(conductor);
+
             conductor.enviarMensajeTransporte("LLevar envio, salir en 15 minutos");
+            conductor.recibirMensaje("Confirmado");
             System.out.println("-------------------------");
         }
 

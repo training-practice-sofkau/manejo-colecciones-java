@@ -15,6 +15,6 @@ public class TransportadorExistente extends Transportador{
 
     @Override
     public void recibirMensaje(String mensaje) {
-        System.out.println("Mensaje recibido: " + mensaje);
+        System.out.println(nombre + ": Mensaje recibido: " + mensaje);
     }
 }

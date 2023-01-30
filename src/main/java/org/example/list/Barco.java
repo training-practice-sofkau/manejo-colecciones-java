@@ -3,8 +3,8 @@ package org.example.list;
 public class Barco implements Transporte{
 
     @Override
-    public TransporteFactory entregar() {
+    public void entregar() {
         System.out.println("Entregar paquetes por Barco en Contenedores");
-        return null;
+        //return null;
     }
 }

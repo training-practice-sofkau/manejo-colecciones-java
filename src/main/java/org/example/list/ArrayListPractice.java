@@ -14,11 +14,17 @@ public class ArrayListPractice {
 
     public void ejecutar(){
 
-        List<TransporteFactory> transporteFactories = new ArrayList<TransporteFactory>();
+        List<Transporte> transportes = new ArrayList<Transporte>();
 
-        transporteFactories.add(new TransporteFactory().crearTransporte("Camion").entregar());
-        transporteFactories.add(new TransporteFactory().crearTransporte("Barco").entregar());
-        transporteFactories.add(new TransporteFactory().crearTransporte("Moto").entregar());
+        transportes.add(new TransporteFactory().crearTransporte("Camion"));
+        transportes.add(new TransporteFactory().crearTransporte("Barco"));
+        transportes.add(new TransporteFactory().crearTransporte("Camion"));
+        transportes.add(new TransporteFactory().crearTransporte("Moto"));
+
+        for (Transporte transporte:transportes ) {
+
+            transporte.entregar();
+        }
 
     }
 }
