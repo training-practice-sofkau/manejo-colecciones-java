@@ -1,6 +1,8 @@
 package org.example.set;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetPractice {                  // Se cambia de nombre para poder exportar la librería sin problemas
     public void ejecutar() {
@@ -41,11 +43,39 @@ class Ejemplos {
         System.out.println("El HashSet " + set + " ahora está vacío");
     }
 
+    /* En este ejemplo se utiliza un HashSet que contiene las monedas acuñadas en un país, las cuales no pueden ser
+       repetidas, y se muestran por pantalla dichas monedas
+     */
     public void ejemplo2() {
-        //...Monedas de un país iterator
+        // Se usa el constructor con una colección inicial
+        HashSet<Integer> monedas = new HashSet<>(Arrays.asList(50, 100, 200, 500, 1000));
+        System.out.println("Las monedas en Colombia son:");
+        for (Iterator<Integer> it = monedas.iterator(); it.hasNext(); ) {
+            int moneda = it.next();
+            System.out.println("$ " + moneda);
+        }
     }
 
+    /* En este ejemplo se utiliza un HashSet que contiene los amigos de una red social, donde no se puede añadir dos
+       veces a la misma persona, además se elimina la lista de amigos totalmente
+     */
     public void ejemplo3() {
-        //...
+        // Se usa el constructor con una colección inicial
+        HashSet<String> amigos = new HashSet<>(Arrays.asList("JuanDa", "Luisa Bedoya", "Carlos 'Gato' Agudelo"));
+        System.out.println("Sus amigos actuales son: \n" + amigos);
+        if (amigos.contains("Luisa Bedoya")) { // Se evalúa si la colección ya tiene un amigo
+            System.out.println("El amigo ya existe, tratando de agregarlo nuevamente");
+            amigos.add("Luisa Bedoya");        // Se trata de añadir un nuevo amigo
+        } else {
+            System.out.println("Añadiendo amigo");
+            amigos.add("Luisa Bedoya");        // Se añade un nuevo amigo
+        }
+        System.out.println("Sus amigos actuales son: \n" + amigos);
+        amigos.clear();                        // Se elimina la lista de amigos por completo
+        if (amigos.isEmpty()) {                // Se evalúa si la lista está vacía
+            System.out.println("Lista " + amigos + " de amigos vacía");
+        } else {
+            System.out.println("Aún tienes amigos!");
+        }
     }
 }
