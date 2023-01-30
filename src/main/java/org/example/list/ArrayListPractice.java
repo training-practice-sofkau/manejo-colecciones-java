@@ -16,38 +16,16 @@ public class ArrayListPractice {
     Identificacion identificacion = new Identificacion();
 
     public void ejecutar() {
-        int opc;
 
-        do {
-            System.out.println("_________________EJERCICIOS ARRAYLIST_________________");
-            System.out.println("1. Ejercicio 1\n" +
-                    "2. Ejercicio 2\n" +
-                    "3. Ejercicio 3\n" +
-                    "4. <--- Atras");
-            System.out.print("Digite una opcion: ");
-            opc = entrada.nextInt();
-            switch (opc) {
-                case 1:
+            System.out.println("_______________________________________________________________-EJERCICIOS ARRAYLIST___________________________________________________");
                     System.out.println("----------------------------------------------------------------------");
                     gatos.ejecutar();
-                    break;
-                case 2:
                     System.out.println("----------------------------------------------------------------------");
                     perros.ejecutar();
-                    break;
-                case 3:
                     System.out.println("----------------------------------------------------------------------");
                     identificacion.ejecutar();
-                    break;
-                case 4:
-                    System.out.println("Saliendo.....");
-                    break;
+                    System.out.println("______________________________________________________________________");
 
-                default:
-                    System.out.println("Opcion no valida");
-            }
-        } while (opc < 4);
-        System.out.println("_______________________________________________________________-");
 
     }
 
