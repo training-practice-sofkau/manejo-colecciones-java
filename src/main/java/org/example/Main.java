@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.list.*;
 import org.example.map.*;
+import org.example.set.HashSetPractice;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,5 +36,13 @@ public class Main {
         System.out.println("Ejemplo 3");
         HashMapPractice3 hashMapPractice3 = new HashMapPractice3();
         hashMapPractice3.ejecutar();
+        System.out.println("-------HashSet-------");
+        HashSetPractice hashSetPractice = new HashSetPractice();
+        System.out.println("Ejemplo 1");
+        hashSetPractice.ejecutar1();
+        System.out.println("Ejemplo 2");
+        hashSetPractice.ejecutar2();
+        System.out.println("Ejemplo 3");
+        hashSetPractice.ejecutar3();
     }
 }
