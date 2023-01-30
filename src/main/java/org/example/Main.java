@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.list.*;
-import org.example.map.HashMapPractice;
+import org.example.map.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +29,11 @@ public class Main {
         System.out.println("Ejemplo 1");
         HashMapPractice hashMapPractice = new HashMapPractice();
         hashMapPractice.ejecutar();
-        System.out.println("Ejemplo 1");
-
+        System.out.println("Ejemplo 2");
+        HashMapPractice2 hashMapPractice2 = new HashMapPractice2();
+        hashMapPractice2.ejecutar();
+        System.out.println("Ejemplo 3");
+        HashMapPractice3 hashMapPractice3 = new HashMapPractice3();
+        hashMapPractice3.ejecutar();
     }
 }
