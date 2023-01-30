@@ -1,5 +1,7 @@
 package org.example.list;
 
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListPractice {
@@ -55,11 +57,31 @@ class EjemplosLL {
         System.out.println("La LinkedList " + linkedList + " ahora está vacía");
     }
 
+    /* En este ejemplo se utiliza una LinkedList con nombres de estudiantes que deben ser leídos, pero hay que agregar
+       un estudiante nuevo, quitar uno que se va, y modificar el nombre incorrecto.
+     */
     public void ejemplo2() {
-        //...Nombres de estudiantes acceder y agregar
+        // Se usa el constructor con una colección inicial
+        LinkedList<String> nombres = new LinkedList<>(Arrays.asList("Juan", "Pedro", "Ana", "Lui"));
+        // Se accede a la colección por medio de sus métodos
+        System.out.println(nombres.getFirst() + " es el primero en la lista y " + nombres.getLast() + " es el último");
+        nombres.set(3, "Luis");      // Se modifica el nombre incorrecto
+        nombres.removeFirst();       // Se quita el estudiante que se va
+        nombres.addFirst("Emma"); // Se añade la estudiante nueva
+        // Se vuelve a mostrar la lista de estudiantes con su tamaño
+        System.out.println("Los " + nombres.size() + " estudiantes actuales son: " + nombres);
     }
 
+    /* En este ejemplo se utiliza una LinkedList con tamaños de tornillos que deben ser mostrados, esta vez, haciendo
+       uso del iterador generado con el método de la clase
+     */
     public void ejemplo3() {
-        //...listIterator con los tamaños de tornillos
+        // Se usa el constructor con una colección inicial
+        LinkedList<String> tornillos = new LinkedList<>(Arrays.asList("1/2", "5/8", "3/4", "7/8", "1-1/8", "1-1/4", "2"));
+        System.out.println("Los " + tornillos.size() + " tamaños de tornillo disponibles son:");
+        for (Iterator<String> it = tornillos.iterator(); it.hasNext(); ) {
+            String tamanno = it.next();
+            System.out.println(tamanno + " in");
+        }
     }
 }

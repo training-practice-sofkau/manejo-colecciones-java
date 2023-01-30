@@ -49,7 +49,7 @@ class EjemplosAL {
         System.out.println("La ArrayList " + arrayList + " ahora está vacía");
     }
 
-    /* En este ejemplo se utiliza un ArrayList que contiene años históricos, pero uno de ellos está mal. Además, se
+    /* En este ejemplo se utiliza una ArrayList que contiene años históricos, pero uno de ellos está mal. Además, se
        muestran por pantalla usando un for y for-each loop, una vez el año incorrecto es reemplazado
      */
     public void ejemplo2() {
@@ -65,8 +65,8 @@ class EjemplosAL {
             System.out.println("Año " + annos.get(i));
         }
     }
-    /* En este ejemplo se utiliza un ArrayList que contiene posiciones de llegada, pero están desordenadas. Además, se
-       muestra por pantalla usando un for-each loop, una vez el se han ordenado
+    /* En este ejemplo se utiliza una ArrayList que contiene posiciones de llegada, pero están desordenadas. Además, se
+       muestran por pantalla usando un for-each loop, una vez se han ordenado
      */
     public void ejemplo3() {
         // Se usa el constructor con una colección inicial
