@@ -3,6 +3,7 @@ package org.example;
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPracticeBuilder;
 import org.example.map.HashMapPractice;
+import org.example.set.HashSetEjemplos;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -44,7 +45,9 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("\n*****Hash Set*****");
-
+                    HashSetEjemplos set = new HashSetEjemplos();
+                    set.HashSet1();
+                    set.HashSet2();
                     break;
                 default:
                     System.out.println("\n*****Opcion Incorrecta*****");
