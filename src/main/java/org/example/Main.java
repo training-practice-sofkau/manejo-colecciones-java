@@ -8,6 +8,7 @@ import org.example.list.linkedListExamples.example2.LinkedListRoster;
 import org.example.list.linkedListExamples.example3.LinkedListPeople;
 import org.example.map.example1.HashMapNumbers;
 import org.example.map.example2.HashMapCiudad;
+import org.example.map.example3.HashMapEstadio;
 import org.example.set.example1.ExampleHashSetWeek;
 import org.example.set.example2.HashSetPlayer;
 import org.example.set.example3.ExampleHashSet;
@@ -61,5 +62,9 @@ public class Main {
         System.out.println("Ejemplo2");
         HashMapCiudad hashMapCiudad = new HashMapCiudad();
         hashMapCiudad.MapCiudad();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Ejemplo3");
+        HashMapEstadio hashMapEstadio = new HashMapEstadio();
+        hashMapEstadio.getCiudadEstadio();
     }
 }
