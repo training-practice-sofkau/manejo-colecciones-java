@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPractice;
+import org.example.map.HashMapPractice;
 
 import java.util.Scanner;
 
@@ -36,6 +37,12 @@ public class Main {
                     break;
 
                 case 3:
+                    HashMapPractice hashMapPractice = new HashMapPractice();
+                    System.out.println("------------------------------------------------");
+                    hashMapPractice.ejemplo1();
+                    System.out.println("------------------------------------------------");
+                    hashMapPractice.ejemplo2();
+
 
                     break;
 
