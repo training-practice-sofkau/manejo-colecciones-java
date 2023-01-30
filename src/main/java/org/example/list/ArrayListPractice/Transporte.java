@@ -1,4 +1,4 @@
-package org.example.list;
+package org.example.list.ArrayListPractice;
 
 public interface Transporte {
 

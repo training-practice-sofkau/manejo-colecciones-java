@@ -21,7 +21,7 @@ public class HashSetPractice {
         fabricaUnica.add("La Patria");
 
         /**
-         * Esta linea solo comprueba el funcionamiento de la HashSet
+         * Esta linea solo comprueba el funcionamiento del HashSet
          */
         System.out.println(fabricaUnica);
 

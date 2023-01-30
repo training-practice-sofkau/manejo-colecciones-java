@@ -1,4 +1,4 @@
-package org.example.list;
+package org.example.list.LinkedListPractice;
 
 public interface Mediator {
     /**

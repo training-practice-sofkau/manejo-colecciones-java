@@ -1,4 +1,4 @@
-package org.example.list;
+package org.example.list.LinkedListPractice;
 
 import java.util.LinkedList;
 
@@ -9,7 +9,6 @@ public class LinkedListPractice {
      *
      * Este ejemplo hace parte de la Empresa de Logística para envíos
      * Patron de diseño de Comportamiento Mediator
-     * Interface Mediator - Barco, Camion, Moto, - TransporteFactory
      */
     public void ejecutar(){
 

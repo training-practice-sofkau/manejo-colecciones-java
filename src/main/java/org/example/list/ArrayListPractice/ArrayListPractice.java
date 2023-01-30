@@ -1,6 +1,5 @@
-package org.example.list;
+package org.example.list.ArrayListPractice;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 

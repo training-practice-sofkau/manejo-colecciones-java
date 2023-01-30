@@ -1,6 +1,6 @@
-package org.example.list;
+package org.example.list.LinkedListPractice;
 
-public class TransportadorExistente extends Transportador{
+public class TransportadorExistente extends Transportador {
 
     public TransportadorExistente(Mediator mediator, String nombre) {
         super(mediator, nombre);

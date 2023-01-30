@@ -1,6 +1,6 @@
-package org.example.list;
+package org.example.list.ArrayListPractice;
 
-public class Barco implements Transporte{
+public class Barco implements Transporte {
 
     @Override
     public void entregar() {

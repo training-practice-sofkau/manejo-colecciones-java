@@ -1,9 +1,9 @@
-package org.example.list;
+package org.example.list.LinkedListPractice;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Central implements Mediator{
+public class Central implements Mediator {
 
     private List<Transportador> transportadores;
 

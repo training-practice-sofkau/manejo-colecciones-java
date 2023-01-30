@@ -1,4 +1,5 @@
-package org.example.list;
+package org.example.list.LinkedListPractice;
+
 
 abstract class Transportador {
 
