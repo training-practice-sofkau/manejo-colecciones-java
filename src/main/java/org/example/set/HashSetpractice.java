@@ -34,6 +34,19 @@ public class HashSetpractice {
         System.out.println("Tamaño de la lista: "+ trianguloslados.size());
     }
     public void ejemplo3(){
-
+        Set <String> profesiones = new HashSet<>();
+        profesiones.add("Medico");
+        profesiones.add("Ingeniero");
+        profesiones.add("Abogados");
+        profesiones.add("Veterinarios");
+        System.out.println("Lista de profesiones");
+        for (String labores:profesiones) {
+            System.out.println(labores);
+        }
+        profesiones.remove("Abogados");
+        System.out.println("Lista de profesiones Actualizada");
+        for (String labores2:profesiones) {
+            System.out.println(labores2);
+        }
     }
 }
