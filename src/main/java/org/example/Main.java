@@ -3,9 +3,7 @@ package org.example;
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPractice;
 import org.example.map.HashMapPractice;
-
-import java.util.HashMap;
-
+import org.example.set.HashSetPractice;
 public class Main {
     public static void main(String[] args) {
 
@@ -21,7 +19,10 @@ public class Main {
         System.out.println("\nEjemplos de HashMap\n");
         HashMapPractice hashMapPractice = new HashMapPractice();
         hashMapPractice.main();
-
+        // HashSet
+        System.out.println("\nEjemplos de HashSet\n");
+        HashSetPractice hashSet = new HashSetPractice();
+        hashSet.main();
 
     }
 }
