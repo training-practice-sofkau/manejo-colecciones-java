@@ -67,7 +67,7 @@ class Marca implements Operation {
 
     @Override
     public void imprimir() {
-        System.out.println("Marcas cargadas inicialmente: "+marcas);
+        System.out.println("Marcas cargadas: "+marcas);
 
     }
 
@@ -130,7 +130,7 @@ class Aplicacion implements Operation {
 
     @Override
     public void imprimir() {
-        System.out.println("Marcas cargadas inicialmente: "+app);
+        System.out.println("Marcas cargadas: "+app);
 
     }
 
@@ -200,7 +200,7 @@ class Caballo implements Operation {
 
     @Override
     public void imprimir() {
-        System.out.println("Caballos cargadas inicialmente: " + caballos.toString());
+        System.out.println("Caballos cargadas: " + caballos.toString());
 
     }
 

@@ -10,11 +10,11 @@ public class Main {
 
         System.out.println("____________________EJERCICIOS MANEJO DE COLECCIONES_________________");
 
+        HashMapPractice hashMapPractice = new HashMapPractice();
+        hashMapPractice.ejecutar();
+
         HashSet hashSet = new HashSet();
         hashSet.ejecutar();
-
-        HashMapPractice hashMapPractice = new HashMapPractice();
-
 
         ArrayListPractice arrayListPractice = new ArrayListPractice();
         arrayListPractice.ejecutar();
