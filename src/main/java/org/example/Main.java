@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPractice;
+import org.example.map.HashMapPractice;
 import org.example.set.HashSetPractice;
 
 public class Main {
@@ -20,7 +21,12 @@ public class Main {
         HashSetPractice hashSet = new HashSetPractice();
         //hashSet.ejemploUnoHashSet();
         //hashSet.ejemploDosHashSet();
-        hashSet.ejemploTresHashSet();
+        //hashSet.ejemploTresHashSet();
+
+        HashMapPractice hashMapPractice = new HashMapPractice();
+        //hashMapPractice.ejemploUnoHashMapPractice();
+        //hashMapPractice.ejemploDosHashMapPractice();
+        //hashMapPractice.ejemploTresHashMapPractice();
     }
 
 
