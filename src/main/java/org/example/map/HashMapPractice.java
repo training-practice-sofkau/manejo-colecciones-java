@@ -3,6 +3,7 @@ package org.example.map;
 import org.example.list.Empleado;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashMapPractice {
@@ -44,8 +45,20 @@ public class HashMapPractice {
     }
     public void ejemplo3(){
 
+        Map <Integer,String> bancos = new HashMap ();
+        bancos.put(1827,"BBVA");
+        bancos.put(2038,"Bancolombia");
+        bancos.put(2100,"Banco caja social");
 
+        Iterator it = bancos.keySet().iterator();
+        while(it.hasNext()) {
+           Integer key = (Integer) it.next();
+            System.out.println("clave " +key +" valor:"+ bancos.get(key));
+        }
+        bancos.put(2038,"Davivienda");
+        System.out.println("    Bancos Actualizados");
+        for (Map.Entry<Integer,String> listar: bancos.entrySet()) {
+            System.out.println(listar);
+        }
     }
-
-
 }
