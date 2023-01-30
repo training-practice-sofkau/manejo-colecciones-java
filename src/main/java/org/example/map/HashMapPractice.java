@@ -1,6 +1,7 @@
 package org.example.map;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapPractice {
     public void ejecutar() {
@@ -47,11 +48,51 @@ class Ejemplos {
         System.out.println("El HashMap " + map + " ahora está vacío");
     }
 
+    /* En este ejemplo se utiliza un HashMap que contiene Electrodomésticos como valor y sus respectivas Marcas como
+       clave, donde luego se evalúa si el electrodoméstico está en varias marcas y se muestran todos los pares
+     */
     public void ejemplo2() {
-        //... values, keySet Electrodomésticos con sus marcas
+        HashMap<String, String> marcasElec = new HashMap<>(Map.of( // Se usa el constructor con una colección inicial
+                                                                "Haceb","Lavadora",
+                                                                "LG","Lavadora",
+                                                                "Oster","Horno",
+                                                                "Samsung", "Nevera"));
+        System.out.println("Los electrodomésticos son:");          // Se muestran los electrodomésticos
+        for (String elec : marcasElec.values()) {
+            System.out.println(elec);
+        }
+        // Se evalúa si el electrodoméstico pertenece a varias marcas
+        if (marcasElec.containsValue("Lavadora")) {
+            if (marcasElec.containsKey("Haceb") && marcasElec.containsKey("LG")) {
+                System.out.println("\nLa " + marcasElec.get("LG") + " es de esas marcas\n");
+            } else {
+                System.out.println("\nLa " + marcasElec.get("LG") + " NO es de esas marcas\n");
+            }
+        }
+        for (String marca : marcasElec.keySet()) {                 // Se muestran los pares
+            System.out.println("La marca " + marca + " tiene: " + marcasElec.get(marca));
+        }
     }
 
+    /* En este ejemplo se utiliza un HashMap que contiene un diccionario de español a inglés, y será modificado para que
+       sea de español a francés
+     */
     public void ejemplo3() {
-        //...Diccionario ingles frances
+        HashMap<String, String> diccionario = new HashMap<>(Map.of( // Se usa el constructor con una colección inicial
+                                                                    "Rojo","Red",
+                                                                "Verde","Green",
+                                                                "Azul","Blue"));
+        System.out.println("* Diccionario Español-Inglés *");
+        for (String espannol : diccionario.keySet()) {              // Se muestra el diccionario español-inglés
+            System.out.println(espannol + " traduce " + diccionario.get(espannol));
+        }
+        diccionario.remove("Rojo");                             // Se elimina el color Rojo del diccionario
+        diccionario.put("Verde", "Vert");                           // Se traduce el diccionario a francés
+        diccionario.put("Azul", "Bleu");
+        diccionario.put("Morado", "Pourpre");
+        System.out.println("\n* Diccionario Español-Francés *");
+        for (String espannol : diccionario.keySet()) {              // Se muestra el diccionario español-francés
+            System.out.println(espannol + " traduce " + diccionario.get(espannol));
+        }
     }
 }
