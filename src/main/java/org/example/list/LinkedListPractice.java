@@ -27,11 +27,6 @@ public class LinkedListPractice {
         // Tamaño de la LinkedList
         System.out.println("Tamaño de la LinkedList: " + numeros.size());
 
-        // Recorrer la LinkedList
-        for (Integer numero : numeros) {
-            System.out.println(numero);
-        }
-
         // Ejemplo 2
         System.out.println("\nEjemplo 2: LinkedList de string");
         LinkedList<String> palabras = new LinkedList<>();
@@ -47,12 +42,6 @@ public class LinkedListPractice {
         // Modificar un elemento de la LinkedList
         palabras.set(1, "Arley");
         System.out.println("Segundo elemento después de la modificación: " + palabras.get(1));
-
-        //añadir un elemento en la posición 2
-
-
-        // Eliminar un elemento de la LinkedList
-        palabras.remove(2);
 
         // Tamaño de la LinkedList
         System.out.println("Tamaño de la LinkedList: " + palabras.size());
@@ -95,9 +84,6 @@ public class LinkedListPractice {
         // Modificar un elemento del LinkedList
         autos.set(1, new Automovil("Auteco", "Dominar"));
         System.out.println("Segundo elemento después de la modificación: " + autos.get(1).getMarca() + " " + autos.get(1).getModelo());
-
-        // Eliminar un elemento del LinkedList
-        autos.remove(2);
 
         // Tamaño del LinkedList
         System.out.println("Tamaño del LinkedList: " + autos.size());

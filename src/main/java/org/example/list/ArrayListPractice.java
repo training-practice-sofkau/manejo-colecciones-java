@@ -20,7 +20,7 @@ public class ArrayListPractice {
         numeros.add(3);
 
         // Acceder a un elemento del ArrayList
-        System.out.println("Primer elemento: " + numeros.get(0));
+        System.out.println("Tercer elemento: " + numeros.get(2));
 
         // Modificar un elemento del ArrayList
         numeros.set(1, 4);
@@ -31,11 +31,6 @@ public class ArrayListPractice {
 
         // Tamaño del ArrayList
         System.out.println("Tamaño del ArrayList: " + numeros.size());
-
-        // Recorrer el ArrayList
-        for (Integer numero : numeros) {
-            System.out.println(numero);
-        }
 
         // Ejemplo 2
         System.out.println("\nEjemplo 2: ArrayList de string");
@@ -55,9 +50,6 @@ public class ArrayListPractice {
 
         // Eliminar un elemento del ArrayList
         palabras.remove(2);
-
-        // Tamaño del ArrayList
-        System.out.println("Tamaño del ArrayList: " + palabras.size());
 
         // Recorrer el ArrayList
         for (String palabra : palabras) {
@@ -97,9 +89,6 @@ public class ArrayListPractice {
         // Modificar un elemento del ArrayList
         autos.set(1, new Automovil("Auteco", "Dominar"));
         System.out.println("Segundo elemento después de la modificación: " + autos.get(1).getMarca() + " " + autos.get(1).getModelo());
-
-        // Eliminar un elemento del ArrayList
-        autos.remove(2);
 
         // Tamaño del ArrayList
         System.out.println("Tamaño del ArrayList: " + autos.size());
