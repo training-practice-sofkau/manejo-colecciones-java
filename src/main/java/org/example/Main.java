@@ -42,6 +42,8 @@ public class Main {
                     hashMapPractice.ejemplo1();
                     System.out.println("------------------------------------------------");
                     hashMapPractice.ejemplo2();
+                    System.out.println("------------------------------------------------");
+
 
 
                     break;

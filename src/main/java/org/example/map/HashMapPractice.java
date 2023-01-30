@@ -28,10 +28,22 @@ public class HashMapPractice {
         }
     }
     public void ejemplo2(){
+        Map<String, Double> Empleado = new HashMap<>();
+        Empleado.put("Raul",25000.0);
+        Empleado.put("Samuel",31000.0);
+        Empleado.put("Ana", 10000.0);
+        Empleado.put("Maria",5000.0);
 
-
+        System.out.println("      Lista de Empleados");
+        for (Map.Entry<String,Double> listar: Empleado.entrySet()) {
+            System.out.println(listar);
+        }
+        Empleado.put("Maria",15000.0);
+        System.out.println(" Sueldo Actualizado");
+        System.out.println(Empleado);
     }
     public void ejemplo3(){
+
 
     }
 
