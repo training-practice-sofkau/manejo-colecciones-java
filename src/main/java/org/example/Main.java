@@ -1,8 +1,7 @@
 package org.example;
 
-import org.example.list.ArrayListPractice;
-import org.example.list.ArrayListPractice2;
-import org.example.list.ArrayListPractice3;
+import org.example.list.*;
+import org.example.map.HashMapPractice;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +15,21 @@ public class Main {
         System.out.println("Ejemplo 3");
         ArrayListPractice3 arrayListPractice3 = new ArrayListPractice3();
         arrayListPractice3.ejecutar();
+        System.out.println("-----LinkedList-----");
+        System.out.println("Ejemplo 1");
+        LinkedListPractice linkedListPractice = new LinkedListPractice();
+        linkedListPractice.ejecutar();
+        System.out.println("Ejemplo 2");
+        LinkedListPractice2 linkedListPractice2 = new LinkedListPractice2();
+        linkedListPractice2.ejecutar();
+        System.out.println("Ejemplo 3");
+        LinkedListPractice3 linkedListPractice3 = new LinkedListPractice3();
+        linkedListPractice3.ejecutar();
+        System.out.println("-------HashMap-------");
+        System.out.println("Ejemplo 1");
+        HashMapPractice hashMapPractice = new HashMapPractice();
+        hashMapPractice.ejecutar();
+        System.out.println("Ejemplo 1");
+
     }
 }
