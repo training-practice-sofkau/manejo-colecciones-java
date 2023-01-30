@@ -3,7 +3,7 @@ package org.example;
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPractice;
 import org.example.map.HashMapPractice;
-import org.example.set.HashSet;
+import org.example.set.HashSetPractice;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Main {
 
         System.out.println("\nEjecutando ejemplos de colección SET");
         // Se ejecutan los ejemplos de uso de esta colección
-        HashSet set = new HashSet();
+        HashSetPractice set = new HashSetPractice();
         set.ejecutar();
     }
 }
