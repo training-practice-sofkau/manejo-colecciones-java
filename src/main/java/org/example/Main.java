@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.list.ArrayListPractice.ArrayListPractice;
+import org.example.list.ArrayListPractice.ArrayListPractice2;
 import org.example.list.LinkedListPractice.LinkedListPractice;
 import org.example.map.HashMapPractice;
 import org.example.set.HashSetPractice;
@@ -18,6 +19,10 @@ public class Main {
         ArrayListPractice arrayListPractice = new ArrayListPractice();
         arrayListPractice.ejecutar();
 
+        System.out.println("------------ArrayList Patron de Diseño Factory-------------");
+        ArrayListPractice2 arrayListPractice2 = new ArrayListPractice2();
+        arrayListPractice2.ejecutar2();
+
         System.out.println("------------LinkedList Patron de Diseño Mediator-----------");
         LinkedListPractice linkedListPractice = new LinkedListPractice();
         linkedListPractice.ejecutar();
@@ -26,9 +31,11 @@ public class Main {
         HashMapPractice hashMapPractice = new HashMapPractice();
         hashMapPractice.ejecutar();
 
-        System.out.println("------------HashSetPractice Patron de Diseño Factory-------------");
+        System.out.println("------------HashSet Patron de Diseño Factory-------------");
         HashSetPractice hashSetPractice = new HashSetPractice();
         hashSetPractice.ejecutar();
+
+
 
     }
 
