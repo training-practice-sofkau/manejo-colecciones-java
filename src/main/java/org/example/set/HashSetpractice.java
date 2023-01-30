@@ -1,12 +1,11 @@
 package org.example.set;
 
-import org.example.list.Producto;
-
+import java.util.HashSet;
 import java.util.Set;
 
-public class HashSet {
+public class HashSetpractice {
     public void ejemplo1(){
-        Set<String> computadores = new java.util.HashSet<>();
+        Set<String> computadores = new HashSet<>();
         computadores.add("Lenovo");
         computadores.add("Apple");
         computadores.add("Toshiba");
@@ -22,7 +21,17 @@ public class HashSet {
         }
     }
     public void ejemplo2(){
-
+        Set <String> trianguloslados = new HashSet<>();
+        Set <String> triangulosAngulos = new HashSet<>();
+        trianguloslados.add("Equilatero");
+        trianguloslados.add("Isoceles");
+        trianguloslados.add("Escaleno");
+        triangulosAngulos.add("Rectangulo");
+        triangulosAngulos.add("Acutangulo");
+        trianguloslados.add("Onstusangulo");
+        trianguloslados.addAll(triangulosAngulos);
+        System.out.println("Clasificacion de los Triangulos:" + trianguloslados);
+        System.out.println("Tamaño de la lista: "+ trianguloslados.size());
     }
     public void ejemplo3(){
 
