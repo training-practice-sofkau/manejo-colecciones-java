@@ -6,6 +6,7 @@ import org.example.list.arrayListExamples.example3.SeriesList;
 import org.example.list.linkedListExamples.example1.LinkedListFriends;
 import org.example.list.linkedListExamples.example2.LinkedListRoster;
 import org.example.list.linkedListExamples.example3.LinkedListPeople;
+import org.example.map.example1.HashMapNumbers;
 import org.example.set.example1.ExampleHashSetWeek;
 import org.example.set.example2.HashSetPlayer;
 import org.example.set.example3.ExampleHashSet;
@@ -50,5 +51,10 @@ public class Main {
         System.out.println("Ejemplo3");
         ExampleHashSet exampleHashSet = new ExampleHashSet();
         exampleHashSet.manageHashSet3();
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("Ejemplos HashMap");
+        System.out.println("Ejemplo1");
+        HashMapNumbers hashMapNumbers = new HashMapNumbers();
+        hashMapNumbers.MapNumbers();
     }
 }
