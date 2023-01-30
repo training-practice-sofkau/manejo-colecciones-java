@@ -3,6 +3,7 @@ package org.example;
 import org.example.list.ArrayListPractice;
 import org.example.list.LinkedListPractice;
 import org.example.map.HashMapPractice;
+import org.example.set.HashSet;
 
 import java.util.Scanner;
 
@@ -45,8 +46,13 @@ public class Main {
                     System.out.println("------------------------------------------------");
                     hashMapPractice.ejemplo3();
                     break;
-
                 case 4:
+                    HashSet hashSet= new HashSet();
+                    System.out.println("------------------------------------------------");
+                    hashSet.ejemplo1();
+                    System.out.println("------------------------------------------------");
+
+
 
                     break;
 
