@@ -1,6 +1,8 @@
 package org.example.list;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class ArrayListPractice {
     public void ejecutar() {
@@ -47,11 +49,35 @@ class EjemplosAL {
         System.out.println("La ArrayList " + arrayList + " ahora está vacía");
     }
 
+    /* En este ejemplo se utiliza un ArrayList que contiene años históricos, pero uno de ellos está mal. Además, se
+       muestran por pantalla usando un for y for-each loop, una vez el año incorrecto es reemplazado
+     */
     public void ejemplo2() {
-        //...Años loop...
+        // Se usa el constructor con una colección inicial
+        ArrayList<Integer> annos = new ArrayList<>(Arrays.asList(1963, 1969, 1976, 1978, 1983, 19895, 1990, 1991, 2001));
+        System.out.println("Los años ");
+        for(int anno : annos) {                  // Se muestran los años históricos
+            System.out.println(anno);
+        }
+        System.out.println("Son años donde ocurrieron hechos históricos muy importantes\n");
+        annos.set(annos.indexOf(19895), 1989);   // Se corrige el año de la caída del Muro de Berlín
+        for (int i = 0; i < annos.size(); i++) { // Se muestran los años históricos con año corregido
+            System.out.println("Año " + annos.get(i));
+        }
     }
-
+    /* En este ejemplo se utiliza un ArrayList que contiene posiciones de llegada, pero están desordenadas. Además, se
+       muestra por pantalla usando un for-each loop, una vez el se han ordenado
+     */
     public void ejemplo3() {
-        //...Posiciones de llegada ordenar...
+        // Se usa el constructor con una colección inicial
+        ArrayList<Integer> posiciones = new ArrayList<>(Arrays.asList(1, 2, 5, 3, 4));
+        for (int posicion : posiciones) { // Se muestran las posiciones de llegada
+            System.out.println("Posición N°" + posicion);
+        }
+        Collections.sort(posiciones);     // Se ordenan las posiciones
+        System.out.println("\nPosiciones ordenadas");
+        for (int posicion : posiciones) { // Se muestran las posiciones de llegada ordenadas
+            System.out.println("Posición N°" + posicion);
+        }
     }
 }
