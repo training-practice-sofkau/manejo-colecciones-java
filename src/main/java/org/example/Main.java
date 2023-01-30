@@ -11,12 +11,15 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         boolean ejecutarMenu = true;
 
+        /**
+         * Menú principal de la aplicación
+         */
         while (ejecutarMenu) {
             System.out.println("Bienvenido(a)");
             System.out.println("Selecciona una opción");
             System.out.println("1. Para correr escenario 1 (Supermercado)");
             System.out.println("2. Para correr escenario 2 (Parqueadero)");
-            System.out.println("3. Para correr escenario 3 (Aeropuerto)");
+            System.out.println("3. Para correr escenario 3 (Panadería)");
             System.out.println("4. Para salir");
             int opcion = entrada.nextInt();
 
