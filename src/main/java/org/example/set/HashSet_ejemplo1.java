@@ -8,7 +8,7 @@ public class HashSet_ejemplo1 {
     public static void main(){
 
     //instancio
-    Clientes cliente1 =new Clientes("Camilo Pardo","3127358962",35000);
+    Clientes cliente1 =new Clientes("Camilo Pardo R","3127358962",35000);
     Clientes cliente2 =new Clientes("Luisito Comunica","3137554120",1000000);
     Clientes cliente3 =new Clientes("Sara Cordoba","3114562300",2750);
     Clientes cliente4 =new Clientes("Laura Bermudez","3225449985",78500);
