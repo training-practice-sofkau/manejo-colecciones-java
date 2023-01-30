@@ -7,4 +7,13 @@ public class ArrayListPractice {
      * previo y que involucre varios tipos de dato, vale por uno de cada uno de los tipos
      * de dato involucrados.
      * */
+    private String nombre;
+
+    public ArrayListPractice (String nombre) {ee
+        this.nombre=nombre;
+    }
+
+    public String darNombre(){
+        return nombre;
+    }
 }
