@@ -17,8 +17,8 @@ public class Main {
 
         System.out.println(" ");
         System.out.println("LinkedList");
-        LinkedListPractice linkedList = new LinkedListPractice();
-        linkedList.ejecutar();
+       // LinkedListPractice linkedList = new LinkedListPractice();
+        //linkedList.ejecutar();
 
         System.out.println(" ");
         System.out.println("HashMap");
