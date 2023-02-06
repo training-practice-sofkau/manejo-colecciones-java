@@ -26,6 +26,7 @@ public class HashSet {
 
         for (Museo museo : museoList) {
             destinos.put(museo.nombre, museo);
+            System.out.println(museoList);
         }
 
     }
@@ -50,6 +51,16 @@ class  Hotel extends DestinoTuristico{
         this.nombre = nombre;
         this.cantidadEstrellas = cantidadEstrellas;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "cantidadEstrellas=" + cantidadEstrellas +
+                ", destino='" + destino + '\'' +
+                ", costo=" + costo +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }
 
 class  Museo extends  DestinoTuristico{
@@ -60,5 +71,15 @@ class  Museo extends  DestinoTuristico{
         this.costo = costo;
         this.nombre = nombre;
         this.tematica = tematica;
+    }
+
+    @Override
+    public String toString() {
+        return "Museo{" +
+                "tematica='" + tematica + '\'' +
+                ", destino='" + destino + '\'' +
+                ", costo=" + costo +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }

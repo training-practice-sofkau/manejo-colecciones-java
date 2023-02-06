@@ -1,100 +1,120 @@
 package org.example.map;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
+import java.util.*;
 
 
 public class HashMapPractice {
-    public static void ejecutar(){
+    public static void ejecutar() {
+        System.out.println("Registro de estudiantes");
+        Estudiante estudiante1 = new Estudiante(1, "Guadir", 22, new Date());
+        Estudiante estudiante2 = new Estudiante(2, "Paguay", 23, new Date());
+        Estudiante estudiante3 = new Estudiante(3, "Taimal", 20, new Date());
+        Map<String, Estudiante> lista = new HashMap<>();
+        lista.put("1", estudiante1);
+        lista.put("2", estudiante2);
+        lista.put("3", estudiante3);
 
-        Paciente paciente1 = new Paciente("Juan Perez", "01/01/2000", 1);
-        Paciente paciente2 = new Paciente("María Rueda", "02/01/2000", 2);
-
-        Medico medico1 = new Medico("Dr. Juan", 1);
-        Medico medico2 = new Medico("Dr. Maria", 2);
-
-        Consulta consulta1 = new Consulta("01/01/2021 10:00", paciente1, medico1);
-        Consulta consulta2 = new Consulta("01/02/2021 10:00", paciente2, medico1);
-        Consulta consulta3 = new Consulta("01/03/2021 10:00", paciente1, medico2);
-
-        paciente1.consultas.add(consulta1);
-        paciente2.consultas.add(consulta2);
-        paciente2.consultas.add(consulta3);
-
-        medico1.pacientes.add(paciente1);
-        medico1.pacientes.add(paciente2);
-        medico2.pacientes.add(paciente2);
-
-        HashMap<Integer, Paciente> pacientesMap = new HashMap<>();
-        pacientesMap.put(paciente1.id, paciente1);
-        pacientesMap.put(paciente2.id, paciente2);
-
-        HashMap<Integer, Medico> medicosMap = new HashMap<>();
-        medicosMap.put(medico1.id, medico1);
-        medicosMap.put(medico2.id, medico2);
-
-        //Iterando lista pacientes.
-
-        for (Paciente paciente : pacientesMap.values()) {
-            System.out.println("Paciente: " + paciente.nombre);
-
-            System.out.println("Fecha de nacimiento: " + paciente.fechaNacimiento);
-
+        for (Map.Entry<String, Estudiante> e : lista.entrySet()) {
+            System.out.println(e);
         }
 
 
+        System.out.println("Lanzando dados");
+
+        Dado dado1 = new Dado(6);
+        System.out.println("Primer Lanzamiento: " + dado1.lanzar());
+
+        Dado dado2 = new Dado(6);
+        System.out.println("Lanzamiento Lanzamiento: " + dado2.lanzar());
+    }
     }
 
 
 
 
+/**
+ * Ejemplo 1
+ */
+class Dado {
+    int numCaras;
+    HashMap<Integer, Integer> caraResultado;
+    Random random = new Random();
 
+    public Dado(int numCaras) {
+        this.numCaras = 6;
+        this.caraResultado = new HashMap<>();
+        for (int i = 1; i <= numCaras; i++) {
+            caraResultado.put(i, i);
+        }
+    }
 
+    public int lanzar() {
+        int caraAleatoria = random.nextInt(numCaras) + 1;
+        return caraResultado.get(caraAleatoria);
+    }
 }
 
 
 
 
-class Paciente {
-    String nombre;
-    String fechaNacimiento;
-    int id;
-    List<Consulta> consultas;
+/**
+ * Ejemplo 2
+ */
+class Estudiante {
+    private int id;
+    private String apellido;
+    private int edad;
+    private Date fechaIngreso;
 
-    public Paciente(String nombre, String fechaNacimiento, int id) {
-        this.nombre = nombre;
-        this.fechaNacimiento = fechaNacimiento;
+    public Estudiante(int id, String apellido, int edad, Date fechaIngreso) {
         this.id = id;
-        this.consultas = new ArrayList<>();
+        this.apellido = apellido;
+        this.edad = edad;
+        this.fechaIngreso = fechaIngreso;
     }
-}
 
-class Medico {
-    String nombre;
-    int id;
-    List<Paciente> pacientes;
+    public Estudiante() {
+    }
 
-    public Medico(String nombre, int id) {
-        this.nombre = nombre;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
         this.id = id;
-        this.pacientes = new ArrayList<>();
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public Date getFechaIngreso() {
+        return fechaIngreso;
+    }
+
+    public void setFechaIngreso(Date fechaIngreso) {
+        this.fechaIngreso = fechaIngreso;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" +
+                "id=" + id +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", fechaIngreso=" + fechaIngreso +
+                '}';
     }
 }
-
-class Consulta {
-    String fechaHora;
-    Paciente paciente;
-    Medico medico;
-
-    public Consulta(String fechaHora, Paciente paciente, Medico medico) {
-        this.fechaHora = fechaHora;
-        this.paciente = paciente;
-        this.medico = medico;
-    }
-}
-
-
-
-
